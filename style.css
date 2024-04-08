@@ -1,0 +1,97 @@
+/* added styling to nav bar */
+.nav-list{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+}
+.nav-list li {
+    display : inline-block;
+    margin: 10px;
+}
+.nav-list li a{
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+.nav-list li a:hover{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: underline;
+}
+sup{
+    color:red;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/* added styling to search container */
+#search-container{
+    margin-top: 20px;
+    left: 70%;
+    padding: 0px 0px 0px 60%;
+}
+#search-input {
+    padding: 10px;
+    font-size: 1rem;
+}
+#search-input:focus{
+    background-color: lightgrey;
+}
+#search-button{
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: blue;
+}
+
+
+/* design to all headings */
+#superhero-heading,#fav-superhero-heading{
+    text-align: center;
+    margin : 50px;
+}
+#superhero-heading:hover{
+    color: orange;
+}
+#fav-superhero-heading:hover{
+    color: red;
+}
+
+/*design to all cards */
+.card {
+    border: 2px solid black;
+}
+.card-img-top{
+    height: 200px;
+}
+
+
+/*add styling to superHeros name */
+.superheros-name{
+    cursor: pointer;
+}
+.superheros-name:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+/* add styling to all lists present in series,events,stories,comics */
+.events-list,.series-list,
+.stories-list,.comics-list {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+li {
+    margin-bottom: 8px;
+}
+
+/*desgin to favourite list items (in favourite.html)*/
+.favourite-list {
+    list-style: none;
+    margin-left: 20%;
+}
