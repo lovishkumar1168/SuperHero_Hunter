@@ -10,12 +10,23 @@ function addItem() {
             newItem.innerHTML = `<div class="card" style="width: 18rem;">
                                     <img class="card-img-top" src="${favouriteSuperhero.thumbnail.path}.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title mb-5">${favouriteSuperhero.name}</h5>
+                                        <h5 class="card-title mb-5 superheros-name">${favouriteSuperhero.name}</h5>
                                         <button class="btn btn-primary mx-5 remove-button">Remove</button>
                                     </div>
                                 </div>`;
             ulElement.appendChild(newItem);
         })
+        
+        //apply click event listener on all superHeros name
+        const superherosName = document.querySelectorAll(".superheros-name");
+        superherosName.forEach((superheroName,index)=>{
+            superheroName.addEventListener("click",()=>{
+                const superheroId = favouriteSuperheros[index].id;
+                window.location.href = `superhero.html`;
+                localStorage.setItem("selectedSuperheroIndex", superheroId);
+            })
+        })
+
         // add click event listener on remove button for all fav super Heros list
         const removeButtons = document.querySelectorAll(".remove-button");
         removeButtons.forEach((removeButton,index)=>{
